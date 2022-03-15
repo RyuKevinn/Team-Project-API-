@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+body {position:relative;}
+#main{ padding: 50px; min-height:100%; }
+#main h1{ text-align: center; margin-bottom:20px;}
+#main h2 { padding:10px 0; }
+
+
+/* 로딩화면 */
+#main .loading {
+    height:100%;
+    font-size: 40px;
+    position:fixed;
+    top:0; right:0; left:0; bottom:0;
+    background-color: rgba(0,0,0,0.2);
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main .loading i {margin-right:10px;}
+
+
+/*  */
+#main .databox {
+    border:1px solid black; 
+    padding:10px; 
+    border-radius: 30px; 
+    display: none;
+}
+/* databox가 카테고리 결정하고나면 나오는 ul임. */
+#main .databox > li{
+    border-bottom-style:inset;
+    padding:30px ; 
+    position:relative;
+}
+#main .databox li:last-child{ border:none; }
+#main .databox li > p{
+    padding:0 5px;
+    overflow: hidden;
+}
+#main .databox li>.more button{ 
+    position:absolute; 
+    bottom:10px; 
+    right:10px;
+    border:none;
+    background-color: inherit;
+    cursor: pointer;
+}
+#main .databox li>.more i{ font-size: 12px; }
+
+
+/* 나라이름 선택 */
+#main .search {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    width:100%;
+    margin:0 auto;
+}
+#main .search .searchbox{ }
+#main .search .searchbox select{
+    width:300px; 
+    margin-right: 30px; 
+    height:40px;
+    text-align: center;
+}
+#main .search button {
+    padding:10px; 
+    width:100px; 
+    background-color:#14296C; 
+    color:white; 
+    cursor: pointer;
+}
+
+/* 카테고리 선택 */
+#main #category > ul {
+    display: flex; 
+    align-items: center; 
+    text-align: center; 
+    padding:20px 0;
+}
+#main #category > ul li {
+    flex-grow: 1; 
+    border:1px solid black
+}
+
+/* 나라이름과 카테고리 선택 후 맨 위에 국기사진 */
+#main .imgbox{
+    margin: 30px auto;
+    max-width: 400px;
+    display:none;
+}
+#main .imgbox img { width: 100%; }
+
+/* 국기사진 밑으로 api 자료 불러와서 목록 */
+.mentbox{
+    height: 80vh;
+    text-align: center;
+    padding-top:50px;
+}
+.showbox{
+    display:none;
+    width:100%;
+    border-radius: 30px;
+    border: 1px solid black;
+    padding: 100px 0;
+}
+.showbox > p {
+    font-size: 20px;
+}
+
+
+/* 더보기 시 나타나는 창 */
+.fxbox{
+    position:fixed;
+    top: 0 ;
+    left: 0 ;
+    bottom: 0 ;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    display:none;
+    z-index: 99999;
+}
+.fxbox .content{
+    border:1px solid black;
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:60vw;
+    background-color: #eee;
+    padding:80px;
+    word-break: break-all;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 80vh;
+    z-index: 5;
+}
+.fxbox .content h2 {margin-bottom: 20px;}
+.fxbox .content button{
+    padding: 10px;
+    background: black;
+    border-radius: 10px;
+    color:white;
+    border: none;
+    cursor: pointer;
+    margin : 30px auto 0;
+    display: block;
+}
+
+
+/* 더보기 창 닫기 버튼 (마우스) */
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: black;
+    color:white;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+.circle span {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor:none;
+}
+
+
+/* 페이지 디자인 */
+#main .page { 
+    margin-top:20px; 
+    display: none; 
+    text-align: center;
+}
+#main .page span a {
+    border:1px solid black; 
+    display:inline-block; 
+    padding: 10px; 
+    margin:0 5px; 
+    background:#eee
+}
+#main .page span a.on {
+    color:blue; 
+    background:white; 
+    font-weight: bold;
+}
