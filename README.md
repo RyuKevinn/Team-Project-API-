@@ -5,7 +5,7 @@ Link - https://ryukevinn.github.io/jQuery_Team-Project-API/
 
 -----------------------------
 
-프로젝트 명 : Glow Resort
+프로젝트 명 : 외교부_국가별_안전정보
 
 ---------------------------------
 
@@ -27,9 +27,9 @@ Link - https://ryukevinn.github.io/jQuery_Team-Project-API/
 
 사용 프로그램 및 데이터
 
-  API data
-  API 호출 방식 = ajax
-  API Data Type = XML
+ - API data
+ - API 호출 방식 = ajax
+ - API Data Type = XML
 
      - Open API Link = https://www.data.go.kr/iim/api/selectAPIAcountView.do
 
