@@ -9,10 +9,10 @@ URL : https://ryukevinn.github.io/jQuery_Team-Project-API/
 
 사용 언어 : HTML5 / jQuery / StyleSheet (CSS3)
 
-API 호출 방식 : aJax
-API Data Type : XML
-오픈 API 주소 : https://www.data.go.kr/iim/api/selectAPIAcountView.do
-오픈 API 샘플 : https://apis.data.go.kr/1262000/CountrySafetyService/getCountrySafetyList?serviceKey=Cm6iVvqGBwjh2oznueJPtJ%2Bj2nbXtKNAP5V7ZTvwx2pnzBWlI2hFXHhkuWcOo76C6XJ6iz%2FBVrcJdrFSXsuOaQ%3D%3D&numOfRows=10&pageNo=1&title=%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD&content=%EC%95%88%EC%A0%84%EC%97%AC%ED%96%89
+- API 호출 방식 : aJax
+- API Data Type : XML
+- 오픈 API 주소 : https://www.data.go.kr/iim/api/selectAPIAcountView.do
+- 오픈 API 샘플 : https://apis.data.go.kr/1262000/CountrySafetyService/getCountrySafetyList?serviceKey=Cm6iVvqGBwjh2oznueJPtJ%2Bj2nbXtKNAP5V7ZTvwx2pnzBWlI2hFXHhkuWcOo76C6XJ6iz%2FBVrcJdrFSXsuOaQ%3D%3D&numOfRows=10&pageNo=1&title=%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD&content=%EC%95%88%EC%A0%84%EC%97%AC%ED%96%89
 
 
 
