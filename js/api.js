@@ -1,3 +1,4 @@
+
 // isRun = 중복 작동 금지
 var isRun= false
 var gdata = '';
@@ -39,7 +40,7 @@ abc(titName,startPage,category)     //함수 호출
 
 // API 데이터 호출
 function usedata(data, pno){
-    totalCount = $(data).find('totalCount').text();
+    var totalCount = $(data).find('totalCount').text();
     totalCount = Math.ceil(Number(totalCount)/10)
 
     var countryN =  $(document).find('#title').find('option:selected').val()
@@ -62,7 +63,7 @@ function usedata(data, pno){
             elem+=`<li><h2>${contenttit}</h2>`
             if (contentName.length>700){
                 elem+=`<p class="txt">${newtext}...</p>`
-                elem+=`<span class="more"><button type="button" data-content="${contentName}" data-title="${contenttit}">더보기<i class="fa-solid fa-angle-right"></i></button></span></li>`
+                elem+=`<span class="more"><button type="button" data-content="${contentName}" data-title="${contenttit}">더보기 <i class="fa-solid fa-angle-right"></i></button></span></li>`
             }else{
                 elem+=`<p class="txt">${contentName}</p></li>`
             }
@@ -97,7 +98,7 @@ function usedata(data, pno){
     var txtblock = $('.databox').text()
     var noneTitle = $('#title').find('option:selected').val()
     var noneCategory = $('#category').find('option:selected').val()
-    
+    console.log(noneCategory, noneTitle,txtblock)
     if(txtblock){
         $('.imgbox , .databox , .page').fadeIn(3000)
     }else if(noneCategory==='카테고리 선택'&& noneTitle!=='나라이름 선택'){
@@ -107,7 +108,7 @@ function usedata(data, pno){
         $('#main').append(`<div class="mentbox"><div class="showbox"><p>원하시는 나라를 선택해 주세요</p></div></div>`).fadeIn(3000)
         $('.showbox').fadeIn(500)
     }else if(noneTitle==='나라이름 선택' && noneCategory==='카테고리 선택'){
-        $('.mentbox').append(`<div class="mentbox"><div class="showbox"><p>원하시는 나라와 카테고리를 선택 후 검색버튼을 눌러주세요</p></div></div>`) 
+        $('#main').append(`<div class="mentbox"><div class="showbox"><p>원하시는 나라와 카테고리를 선택 후 검색버튼을 눌러주세요</p></div></div>`) 
         $('.showbox').fadeIn(500)
     }else{
         $('#main').append(`<div class="mentbox"><div class="showbox"><p>자료가 없습니다.</p></div></div>`).fadeIn(3000)
