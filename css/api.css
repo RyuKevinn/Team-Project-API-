@@ -92,8 +92,8 @@
 
 /* 나라이름과 카테고리 선택 후 맨 위에 국기사진 */
 #main .imgbox{
-    margin: 30px;
-    /* margin: 30px auto; */
+    /* margin: 30px; */
+    margin: 30px auto;
     max-width: 400px;
     display:none;
 }

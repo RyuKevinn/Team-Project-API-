@@ -1,10 +1,13 @@
 #main { background-color: #fff; }
+#main.row{
+    background:#14296C;
+    border-radius: 30px;
+  }
 #main h1 {
     text-align: center;
-    padding: 20px 0;
+    padding: 40px 0;
     position: relative;
-    background: white;
-    border-radius: 10px;
+    color:white;
 }
 #main h1::after {
     position: absolute;
@@ -13,7 +16,7 @@
     left: 10%;
     width: 80%;
     height: 3px;
-    background: rgba(0, 0, 0, 0.4);
+    background: white;
 }
 
 #main .image1 {

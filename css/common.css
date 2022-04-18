@@ -31,6 +31,7 @@ a { text-decoration: none; color: inherit; }
     box-shadow: 2px 2px 15px 10px rgba(0,0,0,0.4);
     position:relative;
     overflow: hidden;
+    z-index:999;
 }
 #header .bg1{
     position:absolute;

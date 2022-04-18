@@ -1,10 +1,14 @@
 #main { background-color: #fff; }
+#main.row{
+  background:#14296C
+}
 #main h1 {
   text-align: center;
-  padding: 20px 0;
+  padding: 40px 0;
   position: relative;
-  background: white;
-  border-radius: 10px;
+  /* background: white; */
+  color:white;
+  border-radius: 30px;;
 }
 #main h1::after {
   position: absolute;
@@ -13,7 +17,7 @@
   left: 10%;
   width: 80%;
   height: 3px;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255);
 }
 #main .image1 {
   background: url(../img/covid1.jpg) no-repeat;
@@ -89,6 +93,7 @@
   background-position: center;
   margin: 0 auto;
   background-size: cover;
+  border-radius: 30px;
 }
 
 /* 이미지 클릭 시 (전체화면 모드 디자인) */
