@@ -22,25 +22,19 @@
   background: white;
 }
 #main .image1 {
-  background: url(../img/worldmap.png) no-repeat;
-  height: 500px;
+  background: url(../img/worldmap.png);
+  background-size:cover;
   background-position: top center;
+  height: 50vw;
+  max-height:500px;
+  width:10%;
   margin: 0 auto;
   border-radius: 30px;
-  background-size: cover;
   box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.2);
-  position:relative;
+  /* position:relative; */
   z-index:99;
 }
-/* #main .image1::before{
-  content:'';
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  z-index:-1;
-} */
+
 #main .text {
   box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
@@ -53,7 +47,7 @@
   padding: 40px 0;
   position: relative;
 }
-#main .image1, #main .text { width:1000px; }
+#main .image1, #main .text { width:90%; }
 #main .text .box::after {
   position: absolute;
   content: '';
@@ -65,7 +59,12 @@
   background: rgba(0, 0, 0, 0.2);
 }
 
-#main .text .alert ul li{ position:relative; padding:20px 0; }
+#main .text .alert ul li{
+  /* position:relative;  */
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px 0; }
 #main .text .alert ul li .circle { 
   width:100px; 
   height:100px; 
@@ -94,11 +93,10 @@
 }
 
 #main .text .alert ul li .danger {
-  position:absolute;
-  z-index: 999; 
-  top:50%; left:50%;
-  transform:translate(-50%, -50%);
-  width:100%;
+  line-height: 30px;
+  padding:0 50px;
+  width: 90%;
+  text-align: center;
 }
 #main .text .alert ul li .danger h3 { padding-bottom: 10px; font-size:25px }
 #main .text .box ul > li {
